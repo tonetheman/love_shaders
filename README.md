@@ -13,4 +13,6 @@ Very cool that love/lua even exists. Check it out here https://love2d.org/
 
 To use any of these shaders you need love version 0.9.1 (the newest as of 2014/07/01). Get love installed then you can clone this repo and just run love on each of the directories. The shaders are really mind blowing to me. Cool stuff.
 
+Here is a screenshot of what the flame shader looks like:
+![shader flame](tonetheman.github.com/love_shaders/shader_flame_example.png)
 tony
