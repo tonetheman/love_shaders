@@ -15,4 +15,7 @@ To use any of these shaders you need love version 0.9.1 (the newest as of 2014/0
 
 Here is a screenshot of what the flame shader looks like:
 ![shader flame example](https://raw.githubusercontent.com/tonetheman/love_shaders/master/shader_flame_example.png)
+
+And then one from the shader fire too ![shader fire](https://raw.githubusercontent.com/tonetheman/love_shaders/master/shader_fire_example.png)
+
 tony
