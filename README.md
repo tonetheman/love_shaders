@@ -1,4 +1,6 @@
 
+The other day I read this article http://blogs.love2d.org/content/beginners-guide-shaders and my mind was blown.
+
 Here are some shaders that I found and translated to lua/love.
 
 I am absolutely not the author of these shaders I just changed them enough to get them to work in lua. Complete and total props back to the original authors.
