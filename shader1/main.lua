@@ -1,9 +1,9 @@
  -- shader1
  
- local myShader = nil
- local myTime = 0
- 
- function love.update(dt)
+local myShader = nil
+local myTime = 0
+
+function love.update(dt)
 	myTime = myTime + dt;
 	myShader:send("time",myTime)
 	myShader:send("mouse", { love.mouse.getX() , love.mouse.getY() } )
