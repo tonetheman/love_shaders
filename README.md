@@ -1,4 +1,10 @@
 
+More notes on 2014-07-17
+Found this http://www.opengl.org/wiki/Built-in_Variable_(GLSL)
+And this article http://weworkweplay.com/play/introduction-to-glsl-and-fragment-pixel-shaders/
+Which lead me to do shader1
+The cool thing about shader1 is that it takes a vec2d mouse input parameter in the shader!
+
 The other day I read this article http://blogs.love2d.org/content/beginners-guide-shaders and my mind was blown.
 
 Here are some shaders that I found and translated to lua/love.
