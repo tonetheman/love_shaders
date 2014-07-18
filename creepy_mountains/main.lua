@@ -1,9 +1,11 @@
 local myShader = nil
 local myTime = 0
+local channelImage = nil
 
 function love.update(dt)
 	myTime = myTime + dt;
-	myShader:send("t",myTime)
+	myShader:send("iGlobalTime",myTime)
+	myShader:send("iChannel0", channelImage) -- not sure about this
 	-- myShader:send("mouse", { love.mouse.getX() , love.mouse.getY() } )
 end
 
@@ -14,9 +16,11 @@ function love.draw()
 end
 
 function love.load()
+	channelImage = love.graphics.newImage("tex10.png")
 	myShader = love.graphics.newShader([[
 
 extern number iGlobalTime;
+extern Image iChannel0;
 
 float noise( vec2 p )
 {
