@@ -13,6 +13,9 @@ function love.draw()
 	love.graphics.setShader()
 end
 
+-- I absolutely did not write this shader look here for this shader
+-- https://github.com/silverio/raymarching/blob/master/ChristmasTree.frag
+-- it uses some crazy ray marching (which I think is ray tracing in a shader)
 function love.load()
 	myShader = love.graphics.newShader([[
 	
