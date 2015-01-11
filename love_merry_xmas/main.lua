@@ -149,8 +149,6 @@ vec2 inObj(vec3 p){
 //Scene End
  
 vec4 effect( vec4 color, Image texture, vec2 texture_coords, vec2 screen_coords ) {
-
-  //vec2 vPos=-1.0+2.0*gl_FragCoord.xy/iResolution.xy;
  
 	vec2 vPos=-1.0+2.0* screen_coords.xy / love_ScreenSize.xy;
  
@@ -210,6 +208,8 @@ vec4 effect( vec4 color, Image texture, vec2 texture_coords, vec2 screen_coords 
     p=prp+scp*f;
     s=inObj(p);
   }
+
+  vec4 res;
   
   if (f<maxd){
     if (s.y==0.0)
@@ -219,7 +219,7 @@ vec4 effect( vec4 color, Image texture, vec2 texture_coords, vec2 screen_coords 
     else
       c=obj2_c(p);
       if (s.y<=1.0){
-        return vec4(c*max(1.0-f*.08,0.0),1.0)+pc;
+        res= vec4(c*max(1.0-f*.08,0.0),1.0)+pc;
       } else{
          //tetrahedron normal   
          const float n_er=0.01;
@@ -230,10 +230,11 @@ vec4 effect( vec4 color, Image texture, vec2 texture_coords, vec2 screen_coords 
          n=normalize(vec3(v4+v1-v3-v2,v3+v4-v1-v2,v2+v4-v3-v1));
   
         float b=max(dot(n,normalize(prp-p)),0.0);
-        return vec4((b*c+pow(b,8.0))*(1.0-f*.01),1.0)+pc;
+        res= vec4((b*c+pow(b,8.0))*(1.0-f*.01),1.0)+pc;
       }
   }
-  else return vec4(0,0,0,0)+pc; //background color
+  else res= vec4(0,0,0,0)+pc; //background color
+  return res;
 }
 	
 	

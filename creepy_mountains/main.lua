@@ -5,7 +5,7 @@ local channelImage = nil
 function love.update(dt)
 	myTime = myTime + dt;
 	myShader:send("iGlobalTime",myTime)
-	myShader:send("iChannel0", channelImage) -- not sure about this
+	-- myShader:send("iChannel0", channelImage) -- not sure about this
 	-- myShader:send("mouse", { love.mouse.getX() , love.mouse.getY() } )
 end
 
