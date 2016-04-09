@@ -1,3 +1,6 @@
+Notes on 2016-04-08
+Found a new site and have added more examples :)
+http://thebookofshaders.com
 
 More notes on 2014-07-17
 Found this http://www.opengl.org/wiki/Built-in_Variable_(GLSL)
