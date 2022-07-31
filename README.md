@@ -1,3 +1,13 @@
+
+# shaders in lua from various places
+
+## added incy wincy
+
+the image does not do it justice
+![shader incy wincy](https://raw.githubusercontent.com/tonetheman/love_shaders/master/public/incy.gif)
+
+## older notes
+
 Notes on 2016-04-08
 Found a new site and have added more examples :)
 http://thebookofshaders.com
@@ -25,8 +35,8 @@ Very cool that love/lua even exists. Check it out here https://love2d.org/
 To use any of these shaders you need love version 0.9.1 (the newest as of 2014/07/01). Get love installed then you can clone this repo and just run love on each of the directories. The shaders are really mind blowing to me. Cool stuff.
 
 Here is a screenshot of what the flame shader looks like:
-![shader flame example](https://raw.githubusercontent.com/tonetheman/love_shaders/master/shader_flame_example.png)
+![shader flame example](https://raw.githubusercontent.com/tonetheman/love_shaders/master/public/shader_flame_example.png)
 
-And then one from the shader fire too ![shader fire](https://raw.githubusercontent.com/tonetheman/love_shaders/master/shader_fire_example.png)
+And then one from the shader fire too ![shader fire](https://raw.githubusercontent.com/tonetheman/love_shaders/master/public/shader_fire_example.png)
 
 tony
