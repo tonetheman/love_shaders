@@ -6,6 +6,8 @@
 the image does not do it justice
 ![shader incy wincy](https://raw.githubusercontent.com/tonetheman/love_shaders/master/public/incy.gif)
 
+see here for the shader toy version: https://www.shadertoy.com/view/7dGfWK
+
 ## older notes
 
 Notes on 2016-04-08
